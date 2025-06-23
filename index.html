@@ -2,210 +2,138 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Резюме | Целищев Денис Владиславович</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>
-    body {
-      background: #f7f9fb;
-      font-family: "Segoe UI", Arial, sans-serif;
-      color: #222;
-      margin: 0;
-      padding: 0;
-    }
-    .resume {
-      max-width: 800px;
-      background: #fff;
-      margin: 40px auto 40px auto;
-      border-radius: 14px;
-      box-shadow: 0 2px 12px rgba(0,0,0,0.08);
-      padding: 40px 30px 30px 30px;
-    }
-    h1 {
-      margin-top: 0;
-      font-size: 2.2em;
-      color: #2b506e;
-    }
-    h2 {
-      border-bottom: 1px solid #eee;
-      padding-bottom: 6px;
-      color: #284963;
-      margin-top: 32px;
-      margin-bottom: 14px;
-      font-size: 1.3em;
-    }
-    .contact, .info {
-      color: #5b6b7b;
-      font-size: 1em;
-    }
-    .section {
-      margin-bottom: 28px;
-    }
-    .skills-list, .extra-list {
-      columns: 2;
-      padding-left: 16px;
-      margin-top: 0;
-      margin-bottom: 0;
-    }
-    ul {
-      margin-top: 0;
-      margin-bottom: 0;
-      padding-left: 1.2em;
-    }
-    .job {
-      margin-bottom: 18px;
-    }
-    .job-title {
-      font-weight: bold;
-      color: #32557f;
-      margin-bottom: 2px;
-    }
-    .job-company {
-      font-size: 1em;
-      font-style: italic;
-      color: #64789e;
-    }
-    .job-date {
-      float: right;
-      font-size: 0.96em;
-      color: #b1b6bb;
-    }
-    .portfolio-links a {
-      color: #4e89c7;
-      text-decoration: none;
-      margin-right: 12px;
-    }
-    .portfolio-links a:hover {
-      text-decoration: underline;
-    }
-    @media (max-width: 600px) {
-      .resume {
-        padding: 14px 2vw 24px 2vw;
-      }
-      .skills-list, .extra-list {
-        columns: 1;
-      }
-    }
-  </style>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Денис Целищев — Инженер-конструктор / Инженер-проектировщик</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-  <div class="resume">
-    <h1>Целищев Денис Владиславович</h1>
-    <div class="contact">
-      Инженер-конструктор / Инженер-проектировщик<br>
-      Москва, Россия | <a href="tel:+79652082800">+7 (965) 208-28-00</a> | <a href="mailto:celishevd@mail.ru">celishevd@mail.ru</a><br>
-      <span class="portfolio-links">
-        <a href="https://photos.google.com/" target="_blank">Google Photos</a>
-        <a href="https://youtube.com/" target="_blank">YouTube</a>
-      </span>
-    </div>
-    <div class="info">
-      46 лет, гражданин России, не готов к переезду, готов к редким командировкам
-    </div>
+<body class="bg-gray-100 font-sans">
+  <!-- Главная секция -->
+  <section class="bg-blue-700 text-white py-16 text-center">
+    <h1 class="text-3xl md:text-4xl font-bold">Целищев Денис Владиславович</h1>
+    <p class="text-lg md:text-xl mt-2">Инженер-конструктор / Инженер-проектировщик</p>
+    <p class="mt-4 max-w-2xl mx-auto">Опыт в 3D-моделировании, проектировании, 3D-печати, разработке электроники и управлении проектами. Москва, Россия. 46 лет. Не готов к переезду, готов к редким командировкам.</p>
+    <a href="#contact" class="mt-6 inline-block bg-white text-blue-700 px-6 py-3 rounded-lg font-semibold">Связаться</a>
+  </section>
 
-    <div class="section">
-      <h2>Цель</h2>
-      Инженер-конструктор или инженер-проектировщик с гибким графиком, удаленной или проектной работой.<br>
-      <strong>Ожидаемая зарплата:</strong> 180 000 ₽
+  <!-- Цель -->
+  <section class="py-8 px-5 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-center">Цель</h2>
+    <p class="mt-4 text-gray-700 text-center">
+      Инженер-конструктор или инженер-проектировщик с гибким графиком, удалённой или проектной работой.<br>
+      <b>Ожидаемая зарплата:</b> 180 000 ₽
+    </p>
+  </section>
+
+  <!-- Навыки -->
+  <section class="bg-white py-10 px-5">
+    <h2 class="text-2xl font-bold text-center">Ключевые навыки</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 max-w-4xl mx-auto mt-6">
+      <div>
+        <h3 class="text-lg font-semibold">Технические навыки</h3>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>3D-моделирование: SolidWorks, Autodesk Inventor, Fusion 360, Blender3D</li>
+          <li>3D-печать: FDM, DLP, разработка и изготовление корпусов, прототипов</li>
+          <li>Разработка продуктов: НИОКР, реверс-инжиниринг, проектирование электроники, автокомпонентов</li>
+          <li>Пайка SMD-компонентов, разработка алгоритмов и систем (контроль усталости водителя)</li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="text-lg font-semibold">Программное обеспечение и управление</h3>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Adobe Photoshop, пакеты Adobe для технической документации</li>
+          <li>Формирование бюджета, работа с аутсорсингом, сопровождение проектов</li>
+          <li>Проектирование аудиосистем, доводчиков дверей, дополнительного оборудования</li>
+          <li>Языки: Русский (родной), английский (A1, готов к обучению)</li>
+        </ul>
+      </div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Ключевые навыки</h2>
-      <ul class="skills-list">
-        <li>3D-моделирование и проектирование: SolidWorks, Autodesk Inventor, Fusion 360, Blender3D</li>
-        <li>3D-печать: FDM, DLP, изготовление корпусов и прототипов</li>
-        <li>НИОКР, реверс-инжиниринг, проектирование электроники, автокомпонентов</li>
-        <li>Adobe Photoshop, пакеты Adobe для документации</li>
-        <li>Управление проектами, бюджетирование, аутсорсинг</li>
-        <li>Пайка SMD-компонентов, разработка алгоритмов и систем</li>
-        <li>Проектирование аудиосистем, доводчиков дверей, автотюнинг</li>
-        <li>Русский (родной), английский (A1, готов к обучению)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Опыт работы</h2>
-
-      <div class="job">
-        <span class="job-title">Инженер-конструктор</span>
-        <span class="job-date">11.2021 – 03.2024</span><br>
-        <span class="job-company">Polaris</span>
-        <ul>
+  <!-- Опыт работы -->
+  <section class="py-10 px-5 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-center">Опыт работы</h2>
+    <div class="mt-6 space-y-6">
+      <div>
+        <h3 class="text-lg font-semibold">Инженер-конструктор — Polaris <span class="text-gray-500 text-base">(ноябрь 2021 — март 2024)</span></h3>
+        <ul class="list-disc pl-6 text-gray-700">
           <li>Разработка бытовой и медицинской техники, прототипирование и 3D-моделирование</li>
-          <li>Модернизация конструкций, документация по ЕСКД</li>
-          <li>НИОКР, 3D-печать и тестирование прототипов</li>
-          <li>Формирование бюджетов и координация подрядчиков</li>
+          <li>Внесение изменений в конструкции, создание документации по ЕСКД</li>
+          <li>НИОКР, 3D-печать, тестирование прототипов</li>
+          <li>Формирование бюджетов, координация работы с подрядчиками</li>
         </ul>
       </div>
-
-      <div class="job">
-        <span class="job-title">Руководитель проекта / Инженер-разработчик</span>
-        <span class="job-date">07.2015 – 04.2021</span><br>
-        <span class="job-company">АльтерВитаСтудио</span>
-        <ul>
-          <li>Проектирование аудиосистем для авто, яхт, домашних кинотеатров</li>
-          <li>Разработка дополнительного оборудования, доводчики дверей (2014)</li>
-          <li>3D-моделирование и 3D-печать (FDM, DLP)</li>
-          <li>Сопровождение проектов, работа с аутсорсингом</li>
+      <div>
+        <h3 class="text-lg font-semibold">Руководитель проекта / Инженер-разработчик — АльтерВитаСтудио <span class="text-gray-500 text-base">(июль 2015 — апрель 2021)</span></h3>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Проектирование аудиосистем для автомобилей, яхт и домашних кинотеатров</li>
+          <li>Разработка дополнительного оборудования, включая доводчики дверей</li>
+          <li>3D-моделирование и 3D-печать (SolidWorks, Blender3D, FDM, DLP)</li>
+          <li>Сопровождение проектов, работа с аутсорсинговыми командами</li>
         </ul>
       </div>
-
-      <div class="job">
-        <span class="job-title">Инженер-конструктор / Менеджер проекта</span>
-        <span class="job-date">06.2018 – 08.2019</span><br>
-        <span class="job-company">ООО "Око Системс"</span>
-        <ul>
+      <div>
+        <h3 class="text-lg font-semibold">Инженер-конструктор / Менеджер проекта — ООО "Око Системс" <span class="text-gray-500 text-base">(июнь 2018 — август 2019)</span></h3>
+        <ul class="list-disc pl-6 text-gray-700">
           <li>Разработка системы контроля усталости водителя, алгоритмы и документация</li>
-          <li>3D-моделирование и 3D-печать корпусов</li>
+          <li>3D-моделирование корпусов и компонентов, 3D-печать</li>
           <li>Пайка SMD-компонентов и сборка комплектов</li>
         </ul>
       </div>
-
-      <div class="job">
-        <span class="job-title">Установщик дополнительного оборудования</span>
-        <span class="job-date">06.2015 – 06.2018</span><br>
-        <span class="job-company">ООО "АльтерВитаСтудио"</span>
-        <ul>
-          <li>Установка автозвука, сигнализаций, доп. оборудования</li>
-          <li>Разработка модулей и решение нестандартных задач</li>
+      <div>
+        <h3 class="text-lg font-semibold">Установщик дополнительного оборудования — ООО "АльтерВитаСтудио" <span class="text-gray-500 text-base">(июнь 2015 — июнь 2018)</span></h3>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Установка автозвука, сигнализаций и дополнительного оборудования</li>
+          <li>Разработка вспомогательных модулей, нестандартные задачи</li>
         </ul>
       </div>
-
-      <div class="job">
-        <span class="job-title">Владелец / Инженер-разработчик</span>
-        <span class="job-date">11.2013 – 02.2014</span><br>
-        <span class="job-company">ИНСТАЙЛ</span>
-        <ul>
-          <li>Разработка доводчиков дверей (видео)</li>
-          <li>Автотюнинг, установка автозвука</li>
+      <div>
+        <h3 class="text-lg font-semibold">Владелец / Инженер-разработчик — ИНСТАЙЛ <span class="text-gray-500 text-base">(ноябрь 2013 — февраль 2014)</span></h3>
+        <ul class="list-disc pl-6 text-gray-700">
+          <li>Разработка доводчиков дверей</li>
+          <li>Тюнинг автомобилей, установка автозвука</li>
         </ul>
       </div>
-
-      <div class="job">
-        <span class="job-title">Установщик дополнительного оборудования</span>
-        <span class="job-date">03.2010 – 12.2010</span><br>
-        <span class="job-company">АВТОБАМ</span>
-        <ul>
+      <div>
+        <h3 class="text-lg font-semibold">Установщик дополнительного оборудования — АВТОБАМ <span class="text-gray-500 text-base">(март 2010 — декабрь 2010)</span></h3>
+        <ul class="list-disc pl-6 text-gray-700">
           <li>Установка сигнализаций, автозвука и прочего оборудования</li>
         </ul>
       </div>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Образование</h2>
-      <strong>Среднее специальное</strong><br>
-      ПТУ №54, Радиоэлектроника, Телемастер (1997)<br><br>
-      <strong>Курсы повышения квалификации</strong><br>
-      "Профессионал", Автоэлектрик, установщик автосигнализаций (2010)
+  <!-- Образование -->
+  <section class="bg-white py-10 px-5">
+    <h2 class="text-2xl font-bold text-center">Образование</h2>
+    <div class="max-w-2xl mx-auto mt-6">
+      <ul class="list-disc pl-6 text-gray-700">
+        <li><b>Среднее специальное:</b> ПТУ №54, Радиоэлектроника, Телемастер (1997)</li>
+        <li><b>Курсы повышения квалификации:</b> "Профессионал", автоэлектрик, установщик автосигнализаций (2010)</li>
+      </ul>
     </div>
+  </section>
 
-    <div class="section">
-      <h2>Дополнительная информация</h2>
-      <ul class="extra-list">
-        <li>Портфолио: <a href="https://photos.google.com/" target="_blank">Google Photos</a>, <a href="https://youtube.com/" target="_blank">YouTube</a></li>
-        <li>Водительские права: Категория B</li>
+  <!-- Дополнительная информация -->
+  <section class="py-10 px-5 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-center">Дополнительная информация</h2>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 mt-6">
+      <ul class="list-disc pl-6 text-gray-700">
+        <li>Портфолио: <a href="https://photos.google.com/" target="_blank" class="text-blue-700">Google Photos</a>, <a href="https://youtube.com/" target="_blank" class="text-blue-700">YouTube</a></li>
+        <li>Водительские права: категория B</li>
+      </ul>
+      <ul class="list-disc pl-6 text-gray-700">
         <li>Личные качества: Ответственный, коммуникабельный, креативный, легко обучаемый, ориентирован на результат</li>
       </ul>
     </div>
-  </div>
+  </section>
+
+  <!-- Контакты -->
+  <section id="contact" class="py-10 px-5 max-w-4xl mx-auto">
+    <h2 class="text-2xl font-bold text-center">Контакты</h2>
+    <p class="text-gray-700 mt-4 text-center">
+      Email: <a href="mailto:celishevd@mail.ru" class="text-blue-700">celishevd@mail.ru</a><br>
+      Телефон: <a href="tel:+79652082800" class="text-blue-700">+7 (965) 208-28-00</a>
+    </p>
+  </section>
 </body>
 </html>
