@@ -11,7 +11,21 @@
   <section class="bg-blue-700 text-white py-14 text-center shadow">
     <h1 class="text-3xl md:text-4xl font-bold mb-2">Портфолио</h1>
     <p class="text-lg md:text-xl">Денис Целищев &mdash; инженер, проектировщик, разработчик</p>
-    <a href="/resume-portfolio/" class="inline-block mt-6 bg-white text-blue-700 px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-100 transition">К резюме</a>
+    <a
+      href="#"
+      onclick="
+        if (document.referrer && document.referrer.includes('resume-portfolio')) {
+          window.history.back();
+          return false;
+        } else {
+          window.location.href = '/resume-portfolio/';
+          return false;
+        }
+      "
+      class="inline-block mt-6 bg-white text-blue-700 px-6 py-2 rounded-lg font-semibold shadow hover:bg-gray-100 transition"
+    >
+      К резюме
+    </a>
   </section>
 
   <!-- Фотогалерея -->
